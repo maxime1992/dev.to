@@ -52,7 +52,11 @@ Alternatively you can use a CDN like https://gitcdn.xyz where you'd just need to
 
 ## How to setup CI for auto deploying the blog posts?
 
-If you want to use Github and Travis, a `.travis.yml` file has been already prepared for you. All you have to do is activate the repository on Travis here: https://travis-ci.org/account/repositories
+If you want to use Github and Travis, a `.travis.yml` file has been already prepared for you.
+
+First, you have to activate the repository on Travis: https://travis-ci.org/account/repositories
+
+Then, you have to create a token on your dev.to account: https://dev.to/settings/account and set an environment variable on Travis called `DEV_TO_GIT_TOKEN` that will have the newly created token as value.
 
 ## README template
 

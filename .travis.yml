@@ -1,0 +1,13 @@
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+node_js:
+  - '11'
+script:
+  - yarn run prettier:check
+after_success:
+  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then DEV_TO_GIT_TOKEN="YOUR-ENCRYPTED-DEV-TO-TOKEN-ON-TRAVIS" yarn run dev-to-git; fi
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
