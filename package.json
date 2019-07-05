@@ -1,4 +1,5 @@
 {
+  "name": "dev.to",
   "scripts": {
     "prettier": "prettier",
     "prettier:base": "yarn run prettier \"**/*.{js,json,scss,md,ts,html,component.html}\"",
