@@ -1,5 +1,9 @@
 {
   "name": "dev.to",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/YOUR-REPO.git"
+  },
   "scripts": {
     "prettier": "prettier",
     "prettier:base": "yarn run prettier \"**/*.{js,json,scss,md,ts,html,component.html}\"",
@@ -8,7 +12,7 @@
     "dev-to-git": "dev-to-git"
   },
   "dependencies": {
-    "dev-to-git": "1.0.0",
+    "dev-to-git": "1.1.0",
     "embedme": "1.6.0",
     "prettier": "1.18.2"
   }

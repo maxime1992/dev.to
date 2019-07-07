@@ -79,10 +79,10 @@ defer-to-connect@^1.0.1:
   resolved "https://registry.yarnpkg.com/defer-to-connect/-/defer-to-connect-1.0.2.tgz#4bae758a314b034ae33902b5aac25a8dd6a8633e"
   integrity sha512-k09hcQcTDY+cwgiwa6PYKLm3jlagNzQ+RSvhjzESOGOx+MNOuXkxTfEvPrO1IOQ81tArCFYQgi631clB70RpQw==
 
-dev-to-git@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/dev-to-git/-/dev-to-git-1.0.0.tgz#f9ab193d25a81e9c22da8df66eb4c3b70cc5d4fa"
-  integrity sha512-V2nuMykf/f2OdJoBdZvRS4l8Yl4tSm8hQCjvTGrsuc51mjdFz8Gtv8KhzQBmXVPOgwS+mD0ltO5F8g5oxXOnRA==
+dev-to-git@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/dev-to-git/-/dev-to-git-1.1.0.tgz#d093aad2920b50b49941fc98f957cacfb6425861"
+  integrity sha512-XOdc9Fiu+H95Inbex9toxrLmd9RYEOYG08FHZzbwKDkBtocJA+N6wsW7FFX9kZBcZ8wYi3IgkEtIriMNCPsMIw==
   dependencies:
     dotenv "8.0.0"
     got "9.6.0"
