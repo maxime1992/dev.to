@@ -1,0 +1,7 @@
+// FILL AND REMOVE .dist EXTENSION FROM FILE NAME
+
+{
+  "apiKey": [YOUR_DEVTO_API_KEY],
+  "templateFolder": "name-of-your-blog-post",
+  "targetFolder": "./blog-posts"
+}
