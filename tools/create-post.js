@@ -10,7 +10,7 @@ const devToGit = require('../dev-to-git.json');
 const fsExtra = require('fs-extra');
 const fs = require('fs');
 const join = require('path').join;
-const axios = require('axios');
+const got = require('got');
 
 const postName = process.argv[2];
 const newFilesName = postName.trim().replace(/\s/g, '-');
@@ -26,17 +26,16 @@ fsExtra.renameSync(
 );
 
 console.log('- Creating post on dev.to...');
-axios({
+got('https://dev.to/api/articles', {
   method: 'post',
-  data: { article: { title: postName } },
-  url: 'https://dev.to/api/articles',
+  json: { article: { title: postName, body_markdown: '' } },
   responseType: 'json',
   headers: {
     'Content-Type': 'application/json',
     'api-key': config.apiKey,
   },
 })
-  .then(res => res.data.id)
+  .then(({ body }) => body.id)
   .then(id => {
     console.log(`- Post created successfully`);
     console.log(`- The new post id is #${id}`);
