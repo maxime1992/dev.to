@@ -1,5 +1,7 @@
 # One way publishing of your blog posts from a git repo to dev.to
 
+This repo is just a template to help you get started quickly. If you're looking for an example of a repo using it, have a look here: https://github.com/maxime1992/my-dev.to
+
 ## First, what is dev.to?
 
 https://dev.to is a free and open source blogging platform for developers.
@@ -50,11 +52,16 @@ If you've got some plugin to preview your markdown from your IDE, the images wil
 
 ## How to setup CI for auto deploying the blog posts?
 
-If you want to use Github and Travis, a `.travis.yml` file has been already prepared for you.
+If you want to use Github and Github Actions, a `.github/workflows/main.yml` file has been already prepared for you.
 
-First, you have to activate the repository on Travis: https://travis-ci.org/account/repositories
+- Copy this template to your own Github account by clicking "Use this template"
+- Open up this URL with your own username and repo name of the one you just created using the template: `https://github.com/your-username/your-repo-name/settings/secrets/actions`
+- On the default "Secrets" tab, click on the "New repository secret"
+- In the secret name, write `DEV_TO_GIT_TOKEN`
+- Open up a new tab and go to this URL https://dev.to/settings/extensions. Scroll up to "DEV Community API Keys" and generate a new key. Copy it
+- Go back to the Github tab and paste the key you just copied into the secret input
 
-Then, you have to create a token on your dev.to account: https://dev.to/settings/account and set an environment variable on Travis called `DEV_TO_GIT_TOKEN` that will have the newly created token as value.
+Enjoy.
 
 ## README template
 
